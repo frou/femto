@@ -199,6 +199,10 @@
 ;;
 ;;  Key Bindings 
 ;;
+;; NOTE: The key-sequence notation given as the first argument to the set-key
+;; function is not semantic. A working key binding will only be created if
+;; that "name" was already associated with a key byte sequence by the
+;; create_keys() C function during program initialisation.
 
 (set-key "esc-right" "delete-next-word")
 (set-key "esc-left" "delete-previous-word")
@@ -210,6 +214,9 @@
 (set-key "c-x c-d" "dired")
 (set-key "c-x c" "edit-config")
 (set-key "c-x g" "grep-command")
+
+(set-key "c-left" "backward-word")
+(set-key "c-right" "forward-word")
 
 (show-startup-message)
 

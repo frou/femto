@@ -87,6 +87,21 @@ void create_keys()
 		ctrc_bytes[1] = ch + 96;
 		make_key(ctrc_map2, ctrc_bytes);
 	}
+
+	make_key("c-up",    "\x1B[1;5A");
+	make_key("c-down",  "\x1B[1;5B");
+	make_key("c-right", "\x1B[1;5C");
+	make_key("c-left",  "\x1B[1;5D");
+
+	make_key("S-up",    "\x1B[1;2A");
+	make_key("S-down",  "\x1B[1;2B");
+	make_key("S-right", "\x1B[1;2C");
+	make_key("S-left",  "\x1B[1;2D");
+
+	make_key("C-S-up",    "\x1B[1;6A");
+	make_key("C-S-down",  "\x1B[1;6B");
+	make_key("C-S-right", "\x1B[1;6C");
+	make_key("C-S-left",  "\x1B[1;6D");
 }
 
 int set_key_internal(char *name, char *funcname, char *bytes, void (*func)(void))
