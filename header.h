@@ -2,7 +2,9 @@
  * header.h, femto, Hugh Barney, 2017
  * Derived from: Anthony's Editor January 93, (Public Domain 1991, 1993 by Anthony Howe)
  */
-#define _XOPEN_SOURCE 500
+
+#define _POSIX_C_SOURCE 200809L
+
 #include <locale.h>
 #include <stdlib.h>
 #include <stdarg.h>
