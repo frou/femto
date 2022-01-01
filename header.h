@@ -17,6 +17,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <wchar.h>
+#include <signal.h>
 int mkstemp(char *);
 
 #define E_NAME          "femto"
@@ -427,6 +428,7 @@ extern void debug_stats(char *s);
 extern void fatal(char *msg);
 extern void load_config();
 extern void msg(char *m, ...);
+extern void suspend_process();
 
 /* functions in replace.c */
 extern void query_replace(void);

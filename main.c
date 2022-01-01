@@ -122,6 +122,12 @@ void load_config()
 	reset_output_stream();
 }
 
+void suspend_process()
+{
+	/* send a signal to ourself */
+	raise(SIGTSTP);
+}
+
 void debug(char *format, ...)
 {
 	char buffer[256]; /* warning this is limited size, we should use vnsprintf */

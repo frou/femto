@@ -161,6 +161,7 @@ void setup_keys()
 	set_key_internal("c-v",     "forward-page"          , "\x16", forward_page);
 	set_key_internal("c-w",     "kill-region"           , "\x17", kill_region);
 	set_key_internal("c-y",     "yank"                  , "\x19", yank);
+	set_key_internal("c-z",     "suspend-process"       , "\x20", suspend_process);
 
         set_key_internal("esc-a",   "apropos"               , "\x1B\x61", apropos);
 	set_key_internal("esc-b",   "backward-word"         , "\x1B\x62", backward_word);
