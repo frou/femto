@@ -20,7 +20,6 @@
 #include <unistd.h>
 #include <wchar.h>
 #include <signal.h>
-int mkstemp(char *);
 
 #define E_NAME          "femto"
 #define E_VERSION       "2.11"
